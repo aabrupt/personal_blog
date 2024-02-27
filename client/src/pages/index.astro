@@ -1,0 +1,64 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<style>
+    h1 {
+        color: var(--blue-5);
+        text-shadow: 0 0 10rem var(--blue-5);
+        text-align: center;
+        padding: 10rem 2rem;
+        font-size: min(4rem, 8vmin);
+    }
+    #introduction {
+        color: var(--gray-7);
+        @media (prefers-color-scheme: dark) {
+            color: var(--gray-5);
+        }
+    }
+    #introduction::after {
+        content: "---";
+        display: block;
+        position: absolute;
+        margin-top: 1rem;
+        vertical-align: middle;
+    }
+    p {
+        color: var(--gray-10);
+        margin: 2rem;
+        line-height: var(--font-lineheight-4);
+
+        @media (prefers-color-scheme: dark) {
+            color: var(--gray-3);
+        }
+    }
+</style>
+
+<MainLayout>
+    <h1>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    </h1>
+    <p id="introduction">
+        Pellentesque dignissim enim sit amet venenatis urna cursus eget nunc.
+        Augue neque gravida in fermentum. Sed arcu non odio euismod lacinia at
+        quis risus sed. Nisi porta lorem mollis aliquam ut. Vitae suscipit
+        tellus mauris a. Nullam vehicula ipsum a arcu cursus vitae congue
+        mauris. Vulputate mi sit amet mauris commodo quis imperdiet massa.
+        Malesuada fames ac turpis egestas integer eget aliquet. Tincidunt dui ut
+        ornare lectus sit amet est placerat in.
+    </p>
+    <p>
+        Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Odio
+        euismod lacinia at quis risus sed vulputate odio. Neque viverra justo
+        nec ultrices dui. Mauris cursus mattis molestie a iaculis at erat
+        pellentesque adipiscing. Malesuada bibendum arcu vitae elementum
+        curabitur vitae nunc sed velit. Consectetur adipiscing elit pellentesque
+        habitant morbi tristique. Vulputate odio ut enim blandit volutpat
+        maecenas volutpat. Ipsum a arcu cursus vitae congue mauris. Odio ut sem
+        nulla pharetra diam sit. Nam at lectus urna duis convallis convallis
+        tellus. Sagittis nisl rhoncus mattis rhoncus urna. Malesuada fames ac
+        turpis egestas sed tempus urna et pharetra. Pellentesque nec nam aliquam
+        sem et tortor consequat. Sed risus pretium quam vulputate dignissim
+        suspendisse in est.
+    </p>
+</MainLayout>
